@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eatery | Fresh Food and Great Moments</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header" id="top">
+        <div class="container">
+            <p class="brand">EATERY</p>
+            <h1>Fresh Food, Great Moments</h1>
+            <p class="intro">
+                Welcome to Eatery, where delicious meals and friendly service
+                make every visit special.
+            </p>
+        </div>
+    </header>
+
+    <nav class="main-nav" aria-label="Main navigation">
+        <div class="container">
+            <a href="#about">About</a>
+            <a href="#popular-meals">Popular Meals</a>
+            <a href="#best-seller">Best Seller</a>
+            <a href="#menu">Daily Menu</a>
+            <a href="#booking">Booking / Feedback</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="about" class="content-section">
+            <h2>About Eatery</h2>
+            <p>
+                Eatery serves freshly prepared food using carefully selected
+                ingredients. Whether you are visiting for lunch or dinner,
+                our aim is to provide a welcoming dining experience.
+            </p>
+        </section>
+
+        <section id="popular-meals" class="content-section">
+            <h2>Our Top 3 Meals</h2>
+            <ol class="meal-list">
+                <li>Grilled Chicken with Vegetables</li>
+                <li>Classic Beef Burger</li>
+                <li>Creamy Mushroom Pasta</li>
+            </ol>
+        </section>
+
+        <section id="best-seller" class="content-section">
+            <h2>Our Best Seller</h2>
+            <figure class="featured-meal">
+                <img
+                    src="images/best-seller.jpg"
+                    alt="Eatery's best-selling grilled chicken meal"
+                    width="350"
+                    height="400"
+                >
+                <figcaption>Grilled Chicken with Vegetables – a customer favourite.</figcaption>
+            </figure>
+        </section>
+
+        <section id="menu" class="content-section">
+            <h2>Daily Menu</h2>
+            <div class="table-wrapper">
+                <table class="menu-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Item</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Grilled Chicken with Vegetables</td>
+                            <td>EGP 180</td>
+                        </tr>
+                        <tr>
+                            <td>Classic Beef Burger</td>
+                            <td>EGP 150</td>
+                        </tr>
+                        <tr>
+                            <td>Creamy Mushroom Pasta</td>
+                            <td>EGP 135</td>
+                        <tr>
+                            <td>Caesar Salad</td>
+                            <td>85 EGP</td>
+                        </tr>
+                        <tr>
+                            <td>Margherita Pizza</td>
+                            <td>110 EGP</td>
+                        </tr>
+                        <tr>
+                            <td>Fresh Orange Juice</td>
+                            <td>40 EGP</td></tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="booking" class="content-section">
+            <h2>Booking or Feedback</h2>
+            <p>Send us your details and message. We will be happy to hear from you.</p>
+
+            <form class="contact-form"
+                  action="/booking-feedback"
+                  method="post">
+                <div class="form-group">
+                    <label for="visitor-name">Name</label>
+                    <input
+                        type="text"
+                        id="visitor-name"
+                        name="name"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="visitor-email">Email</label>
+                    <input
+                        type="email"
+                        id="visitor-email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="request-type">Request type</label>
+                    <select id="request-type" name="requestType">
+                        <option value="booking">Booking</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="visitor-message">Message</label>
+                    <textarea
+                        id="visitor-message"
+                        name="message"
+                        rows="5"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Eatery Restaurant. All rights reserved.</p>
+            <a href="#top">Back to top</a>
+        </div>
+    </footer>
+</body>
+</html>
